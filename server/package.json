@@ -1,0 +1,25 @@
+{
+    "name": "@rl/server",
+    "version": "0.0.1",
+    "private": true,
+    "type": "module",
+    "scripts": {
+      "dev": "tsx watch src/index.ts",
+      "db:push": "drizzle-kit push"
+    },
+    "dependencies": {
+      "@rl/shared": "*",
+      "@hono/node-server": "^1.13.0",
+      "better-sqlite3": "^11.7.0",
+      "drizzle-orm": "^0.38.0",
+      "hono": "^4.7.0",
+      "zod": "^3.24.0"
+    },
+    "devDependencies": {
+      "@types/better-sqlite3": "^7.6.0",
+      "@types/node": "^22.0.0",
+      "drizzle-kit": "^0.30.0",
+      "tsx": "^4.19.0",
+      "typescript": "^5.7.0"
+    }
+  }

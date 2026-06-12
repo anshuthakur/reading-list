@@ -1,0 +1,11 @@
+{
+    "name": "reading-lists",
+    "private": true,
+    "workspaces": ["shared", "server", "web"],
+    "scripts": {
+      "dev": "concurrently -n server,web -c cyan,magenta \"npm run dev --workspace=server\" \"npm run dev --workspace=web\""
+    },
+    "devDependencies": {
+      "concurrently": "^9.1.0"
+    }
+  }
